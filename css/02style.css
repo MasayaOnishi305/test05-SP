@@ -1,0 +1,298 @@
+/*―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
+――
+0.全体に適用するCSS
+
+1.header
+
+2.main
+
+3.footer
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+*/
+
+/*―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
+――
+  0.全体に適用するCSS
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+*/
+a{
+  text-decoration: none;
+  display: block;
+  color: #333333;
+}
+button{
+  border: none;  
+  outline: none; 
+}
+li{
+  list-style: none;
+}
+img{
+  display: block;
+}
+span:hover{
+  border-bottom: 1px solid #393939;
+  color:  #6A6A6A;
+}
+
+
+/*――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
+――
+  1.header
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+*/
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 25.8px 111px;
+}
+
+.icon a{
+  font-size: 40px;
+  color: #48bac2;
+  margin: 9.5px 0px;
+  text-align: center;
+}
+.menu{
+  display: flex;
+  justify-content: space-between;
+}
+.menu a{
+  font-size: 18px;
+  color: #48bac2;
+  padding: 0px 18px;
+  line-height: 59.6px;
+}
+.mail{
+  background-color:  #48bac2;
+  margin-left: 15px;
+  display: flex;
+}
+  
+
+.mail a{
+  color: #FFFFFF;
+}  
+.mail img{
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.mail_mark{
+  font-size: 30px;
+}
+button:active{
+  background-color: #d15f6e;
+}
+/*――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
+――
+  2.main
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+*/
+
+/* Lorem Ipsum
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+*/
+.Lorem_Ipsum{
+  height:668px;
+  background-color: #a3a5a8;
+  position: relative;  
+}
+.L_text_area{
+  text-align: center;
+  margin: auto;
+  color: #FFFFFF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.L_title{
+  font-size: 44px;
+  line-height: 80px;
+}
+.L_title h2{
+  font-weight: normal;
+}
+.L_text{
+  width: 800px;
+  font-size: 22px;
+  line-height: 33px;
+  text-align: center;
+  margin: auto;
+}
+/* Greeting
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+*/
+.Greeting{
+  background-image: url(../img/greeting.png);
+  background-size: cover; 
+  padding: 65.8px 0px;
+}
+.G_text_area{
+  width: 650px;
+  text-align: center;
+  margin: auto;
+}
+.G_title h2{
+  font-size: 44px;
+  line-height: 85px;
+  color:#48bac2;
+}
+.G_text{
+  font-size: 18px;
+  line-height: 36px;
+}
+/* banner
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+*/
+.banner{
+  background-color: #f3ebf2;
+  padding: 100px 100px 0px 100px;
+}
+.banner_row{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: auto;
+}
+.banner_img{
+  height: 240px;
+  background-color: #cccccc;
+  width: 360px;
+}
+.banner_text{
+  font-size: 16px;
+  font-family: Noto Sans CJK JP;
+  line-height: 36px;
+  text-align: center;
+  margin: auto;
+  margin: 15px 0px;
+}
+
+.more_area{
+  width: 226px;
+  margin: 15px 67px 100px 67px;
+  background-color: #ff7385;
+  color: #f3ebf2;
+  line-height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.more{ 
+  /* margin: auto; */
+  font-size: 18px;
+  font-weight: bold;
+}
+.more_img{
+  display: inline-block;
+  vertical-align: middle;
+  /* margin: auto;
+  margin-left: auto; */
+}
+
+/* shopinfo
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+*/
+.shopinfo{
+  display: flex;
+}
+.shopinfo_left{
+  width: 50%;
+  padding: 100px;
+}
+.shopinfo_title{
+  font-size: 28px;
+  font-weight: bold;
+  color: #48bac2;
+  line-height: 60px;
+}
+.si{
+  display: flex;
+  font-size: 18px;
+  font-family: Noto Sans CJK JP;
+}
+.si_left{
+  width: 165px;
+  border-right: 2px solid #5a5a5a;
+  padding-top: 15px;
+  line-height: 60px;
+  font-size: 18px;
+}
+.si_right{
+  padding: 15px 0px 0px 30px;
+  line-height: 60px;
+  font-size: 18px;
+  color: #5a5a5a;
+}
+.shopinfo_right{
+  width: 50%;
+  background-color: #cccccc;
+}
+
+/*――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
+――
+  3.footer
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+*/
+footer{
+  background-image: url(../img/footer.png);
+  background-size: cover; 
+  color: #FFFFFF; 
+  padding: 70px 0px;
+}
+.footerinfo{
+  width: 320px;
+  text-align: center;
+  margin: auto;
+}
+.fi_title{
+  font-size: 40px;
+}
+.fi_text p{
+  margin: 30px;
+  line-height: 25px;
+  font-size: 18px;
+}
+.fi_text img{
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.access{
+  background-color: #ff7385;
+  width: 226px;
+  height: 62px;
+  text-align: center;
+  margin: auto;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: bold;
+}
+.access img{
+  display: inline-block;
+vertical-align: middle;
+margin-right: 10px;
+}
+.ft_menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 60px 0px;
+}
+.ft_menu a{
+  font-size: 18px;
+  color: #FFFFFF;
+  align-items: center;
+  padding: 0px 18px;
+}
+.border_right{
+  border-right: 1px solid #FFFFFF;
+}
+.copyright{
+  text-align: center;
+  margin: auto;
+  font-size: 12px;
+}

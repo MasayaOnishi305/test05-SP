@@ -95,61 +95,64 @@ button:active{
   display: none;
 }
 @media screen and (max-width: 1024px){
-.navi{
+  header{
+    padding: 15px 30px;
+  }
+  .navi{
   display: none;
-}
-.drawer{
-  display: inline-block;
-}
-/* ハンバーガーアイコンの設置スペース */
-.drawer-open {
-  display: flex;
-  height: 60px;
-  width: 60px;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  z-index: 100;/* 重なり順を一番上に */
-  cursor: pointer;
-}
+  }
+  .drawer{
+    display: inline-block;
+  }
+  /* ハンバーガーアイコンの設置スペース */
+  .drawer-open {
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 100;/* 重なり順を一番上に */
+    cursor: pointer;
+  }
 /* ハンバーガーメニューのアイコン */
-.drawer-open span,
-.drawer-open span:before,
-.drawer-open span:after {
-  content: '';
-  display: block;
-  height: 3px;
-  width: 25px;
-  border-radius: 3px;
-  background:#F2852D;
-  transition: 0.5s;
-  position: absolute;
-}
+  .drawer-open span,
+  .drawer-open span:before,
+  .drawer-open span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background:#F2852D;
+    transition: 0.5s;
+    position: absolute;
+  }
 /* 三本線のうち一番上の棒の位置調整 */
-.drawer-open span:before {
-  bottom: 8px;
-}
+  .drawer-open span:before {
+    bottom: 8px;
+  }
 
 /* 三本線のうち一番下の棒の位置調整 */
-.drawer-open span:after {
-  top: 8px;
-}
+  .drawer-open span:after {
+    top: 8px;
+  }
 
 /* アイコンがクリックされたら真ん中の線を透明にする */
-#drawer-check:checked ~ .drawer-open span {
-  background: rgba(255, 255, 255, 0);
-}
+  #drawer-check:checked ~ .drawer-open span {
+    background: rgba(255, 255, 255, 0);
+  }
 
 /* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
-#drawer-check:checked ~ .drawer-open span::before {
-  bottom: 0;
-  transform: rotate(45deg);
-}
+  #drawer-check:checked ~ .drawer-open span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+  }
 
 #drawer-check:checked ~ .drawer-open span::after {
-  top: 0;
-  transform: rotate(-45deg);
-}
+    top: 0;
+    transform: rotate(-45deg);
+  }
   
 /* メニューのデザイン*/
 .drawer-content {
@@ -255,7 +258,7 @@ button:active{
   display: flex;
   justify-content: space-between;
   text-align: center;
-  margin: auto;
+  margin: 0 auto;
 }
 .banner_item{
   /* margin-bottom: 100px; */
@@ -279,13 +282,12 @@ button:active{
   color: #965E0C;
 }
 .more_area{
-  margin:80%;
-  /* display:flex;
-  justify-content: center; */
+  margin: 0 auto 20px auto;
 }
 .more_btn{
   width: 226px;
-  /* margin: 15px 67px 0px 67px; */
+  height: 60px;
+  margin: 0 auto;
   background-color: #F2852D;
   color: #f3ebf2;
   line-height: 60px;
@@ -296,6 +298,9 @@ button:active{
 .more{ 
   font-size: 18px;
   font-weight: bold;
+}
+.block{
+width: 40px;
 }
 .more_img{
   display: inline-block;
@@ -310,8 +315,11 @@ button:active{
     margin: 0 auto;
   }
   .more_area{
-    width: 30%;
-    
+    width: 80%;
+    margin: 30px auto;   
+  }
+  .banner_area{
+    padding: 100px;
   }
 }
 /* shopinfo
@@ -364,7 +372,9 @@ button:active{
   }
   .shopinfo_left{
     width: 100%;
-    text-align: center;
+  }
+  .si_left{
+    width: 40%;
   }
   .shopinfo_right{
     width: 100%;

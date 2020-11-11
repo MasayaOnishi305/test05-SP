@@ -474,6 +474,7 @@ margin-right: 10px;
 @media screen and (max-width: 1024px){
   .ft_menu{
     display: block;
+    margin: 60px 0px 20px 0px;
   }
   .ft_menu li{
     width: 100%;
@@ -486,5 +487,8 @@ margin-right: 10px;
   .ft_menu a{
     color: #965E0C;
     line-height: 30px;
+  }
+  footer{
+    padding-bottom: 20px;
   }
 }

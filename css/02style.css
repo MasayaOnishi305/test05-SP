@@ -327,6 +327,7 @@ button:active{
   }
   .banner_img{
     width: 100%;
+    box-sizing: border-box;
   }
   .more_area{
     width: 80%;
@@ -483,6 +484,7 @@ margin-right: 10px;
     margin-bottom: 5px;
     border-top: 1px solid black;
     border-bottom: 1px slid black;
+    box-sizing: border-box;
   }
   .ft_menu a{
     color: #965E0C;
